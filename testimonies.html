@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Fade In On Scroll</title>
+    <style>
+        body{
+	margin:0px;
+	padding:0px;
+	background-color:#f7f7f7;	
+}
+
+ul{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+#main{
+	padding:30px 50px;
+	position:relative;
+	width:100%;
+	/*height: 100vh;
+    box-sizing: border-box;
+	background-size: 1330px;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-image: url("");*/
+    background-color: darkseagreen;
+}
+
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color:#F4F7FF;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+	z-index: 1;
+}
+
+menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#791871;
+	font-size: 12px;
+	
+}
+.lang{
+	color:#292929;
+}
+.logo{
+	font-size: 25px;
+	font-weight: bold;
+	color:#292929;
+	font-family:Poppins;
+}
+.toggle{
+	display: none;
+}
+.active a,
+.menu li a:hover{
+	background-color:#292929;
+	color:#FFF!important;
+	font-weight: bold;
+	transition: all ease 0.4s;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.body {
+    background: repeating-linear-gradient(#C8E6C9, #E8F5E9, #C8E6C9 100%);
+}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.float-left {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+.section {
+    clear: both;
+    margin-bottom: 30px;
+    display: block;
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+
+.hidden {
+    opacity: 0;
+}
+    </style>
+</head>
+<body class="body">
+    <section  id="main">
+
+        <!-----Navigation----------------------------->
+        <nav>
+
+            <!------------Logo------------------------>
+
+            <a href="#" class="logo"> MASITHEMBE </a>
+
+            <!-----menu--------------------------------->
+
+            <div class="toggle"></div>
+        <ul class="menu">
+        <li class="active"><a href="index.html" >Home</a></li>	
+        <li><a href="about.html">About</a></li>	
+		<li><a href="programmes.html">Programmes</a></li>
+		<li><a href="testimonies.html">Mpintshi's</a></li>
+		<li><a href="contact.html">Contact</a></li>	
+        </ul>
+        </nav>
+     </section>
+    <div class="container">
+        <h1 color="">Mpintshi's</h1>
+        <h3>The Mpintshis Programme</h3>
+        <p>Youth Leadership Development within loveLife is rooted on the premise that all young people are already leaders. 
+        The youth leadership development programmes within the organisation seek to develop young people’s leadership, activism, agency, 
+        self-awareness, strengths, skills, competencies, networks, goals and resilience to tackle the challenges they face.</p>
+       
+
+        <section class="section">
+            <h2 id="first-heading">Friends...</h2>
+            <p>A leader in Youth Health promotion</p>
+        </section>
+        <section class="section hidden">
+           
+            <img class="float-left" src="mp.jpg" alt="mp.jpg">
+            <p>The mpintshi programme is one of loveLife’s flagship youth leadership development programmes. 
+                The programme is a youth leadership development journey for in and out-of-school youth who want to develop their ability
+                to guide others on a course of constructive action. It aims to get young people to influence the opinions and behaviours of other youth
+                towards positive social change and bettering their futures and communities. They do this by volunteering their time to implement 
+                loveLife’s healthy sexuality, positive lifestyle and skills development programmes, including Cyber Ys (provides computer skills)
+                and Media Ys (imparts citizen journalism skills). Through facilitating the organisation’s range of programmes, they are empowered
+                with knowledge, experience and competencies for acting as change agents and cultivators of healthy attitudes and lifestyles among
+                their peers and the broader community.</p>
+               
+        </section>
+        <section class="section hidden">
+           
+            <img class="float-right" src="mp1.jpg" alt="mp1.jpg">
+            <p>Offering numerous benefits, the mpintshi programme is a platform for youth to get inspired, realise their untapped potential And
+                 demonstrate leadership by implementing loveLife programmes through face-to-face programming and interaction.</p>
+            <p>mpintshis are taken through a series of capacity building programmes to equip them with the necessary knowledge, skills and
+            techniques for effective outreach and mobilisation. They are led, guided and supported by loveLife groundBREAKERs
+            (peer motivators and community mobilisers) in loveLife programme implementation. Working together with groundBREAKERs,
+            they epitomise the philosophy of healthy lifestyle living and of being change agents in their communities.</p>
+        </section>
+        <section class="section hidden">
+            <h2>Who Are Mpintshis</h2>
+            <img class="float-left" src="mp2.jpg" alt="mp1.jpg">
+            <p>mpintshis are young leaders who serve as in or out-of-school loveLifestyle programme implementers.</p>
+            <ol>
+                <li>In-school mpintshis are between the ages of 12-17.</li>
+                <li>Out-of-school mpintshis are between 17 and 24 years old.</li>
+            </ol>
+        </section>
+        <section class="section hidden">
+            <h2>What Do Mpinthis Do?</h2>
+            <img class="float-left" src="mp3.jpg" alt="mp3.jpg">
+            <p>They are the primary drivers of implementation and are at the frontline of loveLife service delivery, offering face-to-face
+                 programming and interaction. They implement outreach programmes throughout South Africa, working in:</p>
+            <ol>
+                <li>loveLife Y-Centre Academies;</li>
+                <li>Community Partnerships (franchises);</li>
+                <li>Schools;</li>
+                <li>dolescent and Youth Friendly Clinics;</li>
+                <li>Youth groups in various communities.</li>
+            </ol>
+            <p>Each year at least 6 200 full-time youth are recruited into the programme, and to date almost 15 000 young people have
+                 graduated from the mpintshi programme.</p>
+
+        </section>
+        <section class="section hidden">
+            <h2>How Do Mpintshi Personally Benefit From Their Involvoment With LoveLife?</h2>
+            <img class="float-left" src="mp4.jpg" alt="mp4.jpg">
+            <p>There are MANY empowering opportunities that come about from being an mpintshi.</p>
+            <ol>
+                <li>You reduce your chance of becoming involved in risky activities by leading a positive lifestyle;</li>
+                <li>You acquire job-related skills, including facilitation, organisation skills and the ability to run meetings and sessions;</li>
+                <li>You learn how to communicate more effectively;</li>
+                <li>You begin to recognise your personal power and your power to help others;</li>
+                <li>You get a safe place to hang out and just be yourself;</li>
+                <li>You develop a supportive network of other young people who are also striving to make healthy lifestyle choices;</li>
+                <li>You get the opportunity to excel in your role and are eligible for prizes and awards offered by loveLife</li>
+                <li>At the end of the year you are rewarded with a recognition certificate which serves as a reference for potential employers
+                     and other future endeavours</li>
+            </ol>
+            <p>mpintshis usually do not receive a stipend. Their commitment to loveLife is rewarded with a training package, some transport money,
+                 loveLife-branded gear and the opportunity to progress in the organisation to become a groundBREAKER.</p>
+        </section>
+        <section class="section hidden">
+            <img class="float-left" src="mp5.jpg" alt="mp5.jpg">
+            <p>Following their year of service, successful mpintshis become eligible to serve as loveLife groundBREAKERs, where they
+                 receive a gear and stipend. In this way, they can carry on the legacy of all the great work done in the year! All mpintshis also have
+                  the choice to be registered as ‘alumni’ following their year of service.</p>
+                  <p>Alumni give their contact details to loveLife and remain connected to the loveLife network of opportunities. Alumni implement
+                       special programmes with loveLife, are connected to pipelines of opportunities and can serve as mentors to new mpintshi recruits.
+                        In doing so, mpintshis continue to reap the benefits of being involved with loveLife!</p>
+        </section>
+        <section class="section hidden">
+            <h2>How Can One Apply To Become An Mpintshi?</h2>
+            <img class="float-left" src="mp6.png" alt="mp6.png">
+            <p>Approach your closest loveLife site to find out about becoming an mpintshi. To find your nearest loveLife site, visit our contacts
+                 page on the website. You can also apply to become an mpintshi by filling in the form below and submitting it to the person who is 
+                 responsible there.</p>
+                 <p>For more information on the mpintshi programme and loveLife, get in touch with loveLife’s Contact Centre on 0800 121 900 
+                     or send a PLZ CAL ME to 083 323 1023 and an agent will call you back as soon as one is available.</p>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

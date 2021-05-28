@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Fade In On Scroll</title>
+
+    <style>
+ body{
+	margin:0px;
+	padding:0px;
+	background-color:#f7f7f7;	
+}
+
+ul{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+#main{
+	padding:30px 50px;
+	position:relative;
+	width:100%;
+	/*height: 100vh;
+    box-sizing:border-box;
+    background-size: 1330px;
+    background-position: flex;
+    background-repeat: no-repeat;
+    background-image: url("");*/
+    background-color: darkseagreen;
+   
+}
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color:#F4F7FF;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+	z-index: 1;
+}
+
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#791871;
+	font-size: 12px;
+	
+}
+.lang{
+	color:#292929;
+}
+.logo{
+	font-size: 25px;
+	font-weight: bold;
+	color:#292929;
+	font-family:Poppins;
+}
+.toggle{
+	display: none;
+}
+.active a,
+.menu li a:hover{
+	background-color:#292929;
+	color:#FFF!important;
+	font-weight: bold;
+	transition: all ease 0.4s;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.body {
+    background: repeating-linear-gradient(#C8E6C9, #E8F5E9, #C8E6C9 100%);
+}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.float-left {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+.section {
+    clear: both;
+    margin-bottom: 30px;
+    display: block;
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+
+.hidden {
+    opacity: 0;
+}
+    </style>
+</head>
+<body class="body">
+    <section  id="main">
+
+        <!-----Navigation----------------------------->
+        <nav>
+
+            <!------------Logo------------------------>
+
+            <a href="#" class="logo"> MASITHEMBE </a>
+
+
+            <div class="toggle"></div>
+        <ul class="menu">
+        <li class="active"><a href="index.html" >Home</a></li>	
+        <li><a href="about.html">About</a></li>	
+		<li><a href="programmes.html">Programmes</a></li>
+		<li><a href="testimonies.html">Mpintshi's</a></li>
+		<li><a href="contact.html">Contact</a></li>	
+        </ul>
+        </nav>
+     
+     </section>
+
+    <div class="container">
+            <h1>Programmes</h1>
+            
+        <section class="section">
+            <h2 id="first-heading">Boy Child Programme:</h2>
+           
+        </section>
+        <section class="section hidden">
+            
+            <img class="float-left" src="boy.webp" alt="boy.webp">
+            <p>loveLife has a project called the Boy child project aimed at empowering young boys to be better human beings,
+                 that will be able to deal with life challenges better. The way boys are being socialized currently has a negative outcome.
+                  loveLife is concerned that the system currently does not raise boys to be human beings and general members of the society.</p>
+        </section>
+        <section class="section hidden">
+            
+            <img class="float-right" src="boy1.jpg" alt="boy1.jpg">
+            <p>That young Boys and men are told that they are powerful than their female counterparts, that the insistence of society that boys
+                 and men should not cry, that they should be key providers is problematic. The society teaches Boy children that it’s not their duty
+                  to partake in household chores, these negative norms make South Africa an unequal society.</p>
+        </section>
+        <section class="section hidden">
+            
+            <img class="float-left" src="boy2.webp" alt="boy2.webp">
+            <p>Whilst we want to help produce a better boy child. loveLife realises that by society not allowing its boy children to express
+                 their weakness and their emotional side we are harming them and producing monsters. We are currently producing men and boys
+                  that are turning into monsters and harming women and children. That needs to change , it is urgent and must be the top of
+                   everyone’s Agenda. loveLife will work with communities utilizing the already existing structures like Sports Federations to
+                    recruit boys that already belongs to organized structures like soccer clubs.</p>
+        </section>
+        <section class="section hidden">
+           
+            <img class="float-left" src="boy3.webp" alt="boy3.webp">
+            <p>We will then train these boys to influence other young men and boys in their communities. We hope that we will create a group
+                 of Boys that are a voice of reason, boy that rejects violence who agree that South Africa is a country that belongs to everyone who
+                  leaves in it than men are not powerful that girls they are equal our programmes will also target parents and other stakeholders
+                   in the community. We are hoping to produce boys who will contribute to an HIV free future because they will be powered by
+                    responsibility, to use condoms, who know that they can’t force girls to have sex with them. Who are responsible enough to know
+                     that unplanned pregnancies have the ability to interrupt their future plans and that of their female counter parts.</p>
+        </section>
+        <section class="section hidden">
+            <h2>Schools Programme:</h2>
+            <img class="float-left" src="school.webp" alt="school.webp">
+            <p>Our access to young people primarily occurs through the schools’ network and our relationship with these schools and their
+                 support is critical in the success and the reach of many of our programmes.</p>
+            <p>gBs are responsible for registering the schools where they implement the loveLife programmes every year. By the end of 2015,
+                 loveLife had registered a total of 2,356 active schools in all provinces. The largest numbers of registered schools were secondary
+                  schools at 32%, followed by equal 25% registrations for Primary and Combined Schools.</p>
+        </section>
+        <section class="section hidden">
+            <h2>Games Programme:</h2>
+            <img class="float-left" src="games.webp" alt="games.webp">
+            <p>The loveLife Games progamme is an energetic and vibrant engagement with young people that has been realised through the
+                 close cooperation and partnership with the Department of Sports and Recreation South Africa. This positive partnership has
+                  ensured that capacity building, youth development and positive lifestyle programmes are promoted and implemented at sports
+                   and recreation activities across South Africa.</p>
+                   <p>Using sports, recreation, arts and culture as a platform to impart positive lifestyle messaging to its target audience has
+                        ensured the sustainability of the loveLife strategy and, as an organisation, we are appreciative of the valuable contribution
+                         and support of the Department of Sport and Recreation.</p>
+        </section>
+        <section class="section hidden">
+            <h2>Family Programme:</h2>
+            <img class="float-left" src="family.jpg" alt="family.jpg">
+            <p>LoveLife recognises the significant role that parents play in influencing the lives of youth.</p>
+            <p>There is evidence that open communication about sex and sexuality between parent and child
+            significantly reduces risk behaviour.</p>
+            <p>loveLife continues to build on the need to facilitate communication between parents and children and to provide a platform
+                 for parents’ involvement in the organisation’s campaign to build stronger families. loveLife implements three programmes
+                  for supporting the rebuilding of families:</p>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

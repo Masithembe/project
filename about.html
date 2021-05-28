@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Fade In On Scroll</title>
+    <style>
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#f7f7f7;	
+}
+
+ul{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+#main{
+	padding:30px 50px;
+	position:relative;
+	width:100%;
+	/*height: 100vh;
+    box-sizing: border-box;
+	background-size: 1330px;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-image: url("");*/
+	background-color: #F4F7FF;
+}
+
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color:#F4F7FF;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+	z-index: 1;
+}
+
+menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#791871;
+	font-size: 12px;
+	
+}
+.lang{
+	color:#292929;
+}
+.logo{
+	font-size: 25px;
+	font-weight: bold;
+	color:#292929;
+	font-family:Poppins;
+}
+.toggle{
+	display: none;
+}
+.active a,
+.menu li a:hover{
+	background-color:#292929;
+	color:#FFF!important;
+	font-weight: bold;
+	transition: all ease 0.4s;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.body {
+    background: repeating-linear-gradient(#C8E6C9, #E8F5E9, #C8E6C9 100%);
+}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.float-left {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+.section {
+    clear: both;
+    margin-bottom: 30px;
+    display: block;
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+
+.hidden {
+    opacity: 0;
+}
+    </style>
+</head>
+<body class="body">
+    <section  id="main">
+
+        <!-----Navigation----------------------------->
+        <nav>
+
+            <!------------Logo------------------------>
+
+            <a href="#" class="logo"> MASITHEMBE </a>
+
+            <!-----menu--------------------------------->
+
+            <div class="toggle"></div>
+        <ul class="menu">
+        <li class="active"><a href="index.html" >Home</a></li>	
+        <li><a href="about.html">About</a></li>	
+		<li><a href="programmes.html">Programmes</a></li>
+		<li><a href="testimonies.html">Mpintshi's</a></li>
+		<li><a href="contact.html">Contact</a></li>	
+        </ul>
+        </nav>
+     </section>
+    <div class="container">
+        <h1>Overview  Of  Life</h1>
+        <p>Since its launch in 1999, loveLife has been obsessed with improving the lives of young people – first through the
+            prevention of HIV infection and now including holistic youth development.</p>
+        <section class="section">
+            <h2 id="first-heading">Vision</h2>
+            <p>A leader in Youth Health promotion</p>
+        </section>
+        <section class="section hidden">
+            <h2>Mission statement</h2>
+            <img class="float-left" src="about.jpg" alt="about.jpg">
+            <p>To promote social activism for healthy living, active lifestyles and HIV consciousness among young people;
+            through: –Advocacy –Information, education and awareness campaigns –Healthy living and behavioural change
+            interventions –Youth development programmes.</p>
+            <p>In its 19 years of existence, the organisation has touched the lives of millions of youngsters – last year alone the organisation’s
+            programmes reached 1.8 million people in communities in all nine provinces in South Africa.</p>
+            <p>With over 66% of the country’s population being made up of young 7people, we believe that if we address the issues
+            facing the youth in a fundamental way we can unleash and unlock tremendous potential that lies within in them.</p>
+            <p>We have an amazing, credible platform to speak to the hearts and minds of young people – to power a future through
+            the energies of young people. There is a bright future for this country, and it is in the hands of the youth who should,
+            whatever the circumstances, never sacrifice their potential on the bedrock of personal or historic disadvantage.</p>
+            <p>So loveLife has the potential to really change the experience of the youth in this country –we believe that each young
+            person is born with the potential to succeed, to be anything that they want to be provided they have the support and
+            encouragement to do so. But social ills including unemployment, gender-based violence, substance and alcohol abuse,
+            teenage pregnancy, and HIV infection, among others, continue to place young people at risk. To address through the
+            use of its innovative programmatic approaches, loveLife continues with its strategic objectives of:</p>
+            <ol>
+				<li>Reducing HIV infection among young people;</li>
+				<li>Reducing teen pregnancy;</li>
+				<li>Keeping young girls in school; and</li>
+				<li>Improving employment opportunities for young people.</li>
+				<li>To achieve these goals, loveLife has to fundamentally change its way of doing business– the world has changed around
+					us and the base of support that in the past was a given, is no longer guaranteed.</li>
+			</ol>	  
+
+        </section>
+        <section class="section hidden">
+            <h2>Gender Based Violence</h2>
+            <img class="float-right" src="about1.jpg" alt="about1jpg.">
+            <p>loveLife is significantly reliant on government for its funding, but government itself is under significant budgetary
+            constraints. A key project for the organisation is changing this weighting from a 90 odd percent reliance on government
+            to more of a balance between the private and government sectors.</p>
+            <p>The fact that we touch and access 1.5 million young people around the country is a huge opportunity, and we have to
+            see how we can use that platform to generate revenue but without over commercialising the organisation.</p>
+            <p>9loveLife has a visibility challenge as most people still remember the loveLife as one focused on preventing HIV
+            infection through aspirational billboards and the abstinence, be faithful and condomise messaging. It’s not that HIV 
+            is no longer a threat. Rather, people know about it but, because of personal circumstances or community issues, find
+            themselves at greater risk of HIV infection and at a heightened risk of engaging in substance abuse, having an
+            unplanned pregnancy, falling victim to gender-based violence, suicide and crime.</p>
+
+
+        </section>
+        <section class="section hidden">
+            <h2>Responsibilities</h2>
+            <img class="float-left" src="lovelife.png" alt="lovelife.png">
+            <p>The Department of Basic Education’s figures, show that 1,100,877 learners enrolled for Grade 10 in 2014, but only
+            610,178 enrolled for Grade 12 in 2016 – showing an alarming rate of 44.6% of learners either dropping out of the
+            system altogether or remaining stuck in Grade 10 and 11.</p>
+            <p>South Africa’s unemployment rate has been ranked worst in the world in the latest IMD Global Competitiveness
+            Report. For the first quarter of 2016, Stats SA revealed that unemployment was up at 26.7%. And according to the 
+            World Economic Forum Global Risk 2014 report, South Africa has the third highest unemployment rate in the world 
+            between the ages of 15 and 24 and it estimates that more than 50% of this age group is unemployed.</p>
+
+        </section>
+        <section class="section hidden">
+            <h2>Positive Mindset</h2>
+            <img class="float-left" src="lovelife1.jpg" alt="lovelife1.jpg">
+            <p>South Africa’s unemployment rate has been ranked worst in the world in the latest IMD Global Competitiveness
+                Report. For the first quarter of 2016, Stats SA revealed that unemployment was up at 26.7%. And according to the 
+                World Economic Forum Global Risk 2014 report, South Africa has the third highest unemployment rate in the world 
+                between the ages of 15 and 24 and it estimates that more than 50% of this age group is unemployed.</p>
+            <p>South Africa’s unemployment rate has been ranked worst in the world in the latest IMD Global Competitiveness
+                Report. For the first quarter of 2016, Stats SA revealed that unemployment was up at 26.7%. And according to the 
+                World Economic Forum Global Risk 2014 report, South Africa has the third highest unemployment rate in the world 
+                between the ages of 15 and 24 and it estimates that more than 50% of this age group is unemployed.</p>
+        </section>
+        <section class="section hidden">
+            <h2>Sports</h2>
+            <img class="float-left" src="lovelife2.jpg" alt="lovelife2.jpg">
+            <p>South Africa’s unemployment rate has been ranked worst in the world in the latest IMD Global Competitiveness
+                Report. For the first quarter of 2016, Stats SA revealed that unemployment was up at 26.7%. And according to the 
+                World Economic Forum Global Risk 2014 report, South Africa has the third highest unemployment rate in the world 
+                between the ages of 15 and 24 and it estimates that more than 50% of this age group is unemployed.</p>
+            <p>So you have a large number of young people who are unskilled, semi-skilled or who have no ability to be productive
+                and have no sense of future: That is a big calamity for the country.</p>
+        </section>
+        <section class="section hidden">
+            <h2>Helping Hand</h2>
+            <img class="float-left" src="lovelife3.jpg" alt="lovelife3.jpg">
+            <p>A repositioned loveLife has an important role to play in preventing this calamity. Historically loveLife had a strong
+                emphasis on HIV given the prevalence of infection among young people a decade ago. Then, the organisation adopted,
+                among others, a preventative strategy, encouraging ABC – Abstinence, Being faithful and Condom usage. And while
+                the organisation still aims to reduce the risk of HIV infection among the youth, over the past three years it has evolved
+                to address the broader challenges facing young people through holistic youth leadership development.</p>
+            <p>Young people are naturally optimistic, energetic and passionate and through holistic development we try to provide a
+                platform of expression for these attributes.</p>
+        </section>
+        <section class="section hidden">
+            <h2>Schooling</h2>
+            <img class="float-left" src="lovelife4.webp" alt="lovelife4.webp">
+            <p>Through our myriad of programmes we help young people develop a strong sense of self-awareness, which instils
+                confidence in understanding what their strengths are, that they have a right to be here and that they have a contribution
+                to make.</p>
+            <p>We aim to build resilience so that while they are aware of the challenges and obstacles on the path of success, they 
+                recognise that there are also opportunities to develop and challenge the boundaries in the way. We also try to create a
+                sense of equality.</p>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
